@@ -1,0 +1,18 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.header-container {
+  max-width: 100%;
+}
+.cover {
+  background-image: var(linear-gradient), url(../images/desctop-bg-1x.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .cover {
+    background-image: url("../images/desctop-bg-2x.jpg");
+  }
+}
