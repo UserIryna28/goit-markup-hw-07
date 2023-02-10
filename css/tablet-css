@@ -6,13 +6,55 @@
 .header-container {
   max-width: 100%;
 }
+.cover-container {
+  max-width: 100%;
+}
 .cover {
-  background-image: var(--liner-gradient), url(../images/desctop-bg-1x.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/desctop-bg-1x.jpg);
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .cover {
-    background-image: var(--liner-gradient) url("../images/desctop-bg-2x.jpg");
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/desctop-bg-2x.jpg");
   }
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  margin-right: auto;
+}
+.header-links {
+  display: flex;
+}
+
+.contact-links {
+  display: flex;
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
 }

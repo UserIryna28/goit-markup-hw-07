@@ -1,6 +1,6 @@
 :root {
   --main-background-color: #ffffff;
-  --liner-gradient: rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7);
+  --liner-gradient: linear-gradient rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7);
   --cover-color: #ffffff;
   --primary-title-color: #2e2f42;
   --secondary-title-color: #434455;
@@ -61,14 +61,25 @@ img {
 .header-container {
   max-width: 100%;
 }
+.cover-container {
+  max-width: 100%;
+}
 .cover {
-  background-image: var(--liner-gradient) url(../images/mobile-bg-1х.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/mobile-bg-1х.jpg);
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .cover {
-    background-image: var(--liner-gradient) url("../images/mobile-bg-2х.jpg");
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/mobile-bg-2х.jpg");
   }
 }
 
@@ -187,8 +198,15 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people1.jpg);
+    url(../images/mobile-bg-1х.jpg);
   background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .cover {
+    background-image: var(--liner-gradient) url("../images/mobile-bg-2х.jpg");
+  }
 }
 .cover-title {
   width: 500px;
