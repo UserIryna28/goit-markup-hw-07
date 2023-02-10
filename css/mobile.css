@@ -8,7 +8,8 @@
   max-width: 100%;
 }
 .cover-container {
-  max-width: 100%;
+  width: 428px;
+  height: 432px;
 }
 .cover {
   background-image: linear-gradient(
