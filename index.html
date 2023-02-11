@@ -61,6 +61,80 @@
           </ul>
         </address>
       </div>
+       <div class="mob-menu"> 
+        <div class="container">
+          <div>
+            <button type="button" class="mob-menu-close" data-menu-close>
+              <svg class="mob-menu-close-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-Vector-1"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-little">
+              <ul class="mob-menu-links list">
+                  <li class="mob-menu-link link">
+                    <a href="./index.html" class="mob-menu-link link active"> Studio </a>
+                  </li>
+      
+                  <li class="mob-menu-link link">
+                    <a href="./portfolio.html" class="mob-menu-link link">Portfolio</a>
+                  </li>
+                  <li class="mob-menu-link link">
+                    <a href="./index.html" class="mob-menu-link link">Contacts</a>
+                  </li>
+                </ul>
+            </nav>
+          </div>
+            <div>
+              <address class="mob-menu-contacts">
+              <ul class="mob-menu-contacts-links list">
+                <li class="mob-menu-contacts-link link">
+                  <a href="tel:+110001111111" class="mob-menu-tel-link link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-menu-contacts-link link">
+                  <a href="mailto:info@devstudio.com" class="mob-menu-email-link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                
+              </ul>
+            </address>
+            <ul class="mob-soc-list list">
+                      <li class="mob-soc-item">
+                        <a href="" class="mob-soc-link link">
+                          <svg class="mob-soc-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="mob-soc-item">
+                        <a href="" class="mob-soc-link link">
+                          <svg class="mob-soc-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="mob-soc-item">
+                        <a href="" class="mob-soc-link link">
+                          <svg class="mob-soc-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="mob-soc-item">
+                        <a href="" class="mob-soc-link link">
+                          <svg class="mob-soc-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+            </div>
+                </div>
+              </li>
+        </di >
+      </div> 
     </header>
     <main>
       <section class="cover section">
@@ -72,7 +146,7 @@
         </div>
       </section>
       <section class="features section">
-        <div class="container">
+        <div class="container ">
           <h2 class="visually-hidden">Our features</h2>
           <ul class="features-list list">
             <li class="features-item">
@@ -153,7 +227,11 @@
           <h2 class="team-title section-title">Our Team</h2>
           <ul class="title-list list">
             <li class="team-item box-second">
-              <img src="./images/img1.jpg" alt="employee1" width="264" />
+              <img 
+              src="./images/img1.jpg" 
+              alt="employee1" 
+              srcset="./images/img1.jpg 1x,./images/img1-1-2x.jpg 2x "
+              width="264" />
 
               <div class="filling">
                 <h3 class="team-item section-suptitle-employee">
@@ -193,7 +271,11 @@
               </div>
             </li>
             <li class="team-item box-second">
-              <img src="./images/img2.jpg" alt="employee2" width="264" />
+              <img 
+              src="./images/img2.jpg"
+               alt="employee2"
+               srcset=""
+                width="264" />
               <div class="filling">
                 <h3 class="team-item section-suptitle-employee">Tom Ford</h3>
                 <p class="team-text section-text-position">
@@ -523,6 +605,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
     </main>

@@ -8,15 +8,16 @@
   max-width: 100%;
 }
 .cover-container {
-  width: 428px;
-  height: 432px;
+  width: 100%;
 }
 .cover {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/tablet-bg-1x.jpg);
+    url(../images/mobile-bg-1х.jpg);
+  /* background-position: 50% 50%;
+  background-size: cover; */
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -26,11 +27,20 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/tablet-bg-2x.jpg");
+      url("../images/mobile-bg-2х.jpg");
+    /* background-position: 50% 50%;
+    background-size: cover; */
   }
 }
 .header-links {
   display: none;
+}
+.active::after {
+  display: none;
+}
+.active {
+  color: var(--hover-color);
+  position: relative;
 }
 .contact-links {
   display: none;
@@ -39,8 +49,8 @@
   text-decoration: none;
 }
 .header-container {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,18 +127,20 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* feature-mobile */
+.features {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 .features-list {
   display: flex;
   flex-direction: column;
   row-gap: 72px;
-  align-items: center;
+  align-items: baseline;
 }
 .features-list {
   list-style: none;
 }
-.features {
-  padding-bottom: 0;
-}
+
 .features-list {
   display: flex;
 }
@@ -185,6 +197,8 @@
   width: 428px;
 }
 .team {
+  padding-top: 96px;
+  padding-bottom: 128px;
   background-color: var(--content-color);
 }
 
@@ -197,7 +211,6 @@
 .team-soc-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
 }
 .section-suptitle-employee {
   font-family: "Roboto";
@@ -268,19 +281,23 @@
   background-color: var(--hover-color);
 }
 /* customers-mobile */
-
+.container {
+  width: 428px;
+}
+.customers {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 .customers-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  /* gap: 16px; */
+  justify-content: space-between;
 }
 
 .customers-item {
   width: calc((100% - 16px) / 2);
   height: 88px;
-  margin-bottom: 72px;
 }
 .customers-link {
   width: 190px;
