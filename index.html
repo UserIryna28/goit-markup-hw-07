@@ -41,11 +41,11 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button class="mobile-menu-open" data-menu-open type="button">
           <svg class="mobile-menu-open_icon" width="30" height="19">
             <use href="./images/icons.svg#icon-burger-icon"></use>
           </svg>
-        </button>
+        </button> 
         <address>
           <ul class="contact-links list">
             <li class="contact-link link">
@@ -61,15 +61,16 @@
           </ul>
         </address>
       </div>
-       <div class="mob-menu"> 
-        <div class="container">
-          <div>
+      <!-- <div class="mob-menu is-hidden" data-menu>
+          <div class="container">
+                <div> 
             <button type="button" class="mob-menu-close" data-menu-close>
               <svg class="mob-menu-close-btn-icon" width="8" height="8">
-                <use href="./images/icons.svg#icon-Vector-1"></use>
+                <use href="./images/icons.svg#icon-Vector-5"></use>
+                
               </svg>
-            </button>
-            <nav class="mob-menu-little">
+            </button> -->
+            <!-- <nav class="mob-menu-little">
               <ul class="mob-menu-links list">
                   <li class="mob-menu-link link">
                     <a href="./index.html" class="mob-menu-link link active"> Studio </a>
@@ -83,8 +84,8 @@
                   </li>
                 </ul>
             </nav>
-          </div>
-            <div>
+                   </div>
+                      <div>
               <address class="mob-menu-contacts">
               <ul class="mob-menu-contacts-links list">
                 <li class="mob-menu-contacts-link link">
@@ -130,11 +131,13 @@
                         </a>
                       </li>
                     </ul>
-            </div>
+                      </div>
                 </div>
               </li>
-        </di >
-      </div> 
+                </div >
+            </div>    
+      </div>  -->
+        
     </header>
     <main>
       <section class="cover section">
@@ -274,7 +277,8 @@
               <img 
               src="./images/img2.jpg"
                alt="employee2"
-               srcset=""
+               srcset="./images/img2.jpg 1x,./images/img2-1-2x.jpg 2x "
+        
                 width="264" />
               <div class="filling">
                 <h3 class="team-item section-suptitle-employee">Tom Ford</h3>
@@ -314,7 +318,10 @@
               </div>
             </li>
             <li class="team-item box-second">
-              <img src="./images/img3.jpg" alt="employee3" width="264" />
+              <img src="./images/img3.jpg" 
+              alt="employee3"
+              srcset="./images/img3.jpg 1x,./images/img3-1-2x.jpg 2x "
+               width="264" />
               <div class="filling">
                 <h3 class="team-item section-suptitle-employee">
                   Camila Garcia
@@ -353,7 +360,10 @@
               </div>
             </li>
             <li class="team-item box-second">
-              <img src="./images/img4.jpg" alt="employee4" width="264" />
+              <img src="./images/img4.jpg" 
+              alt="employee4" 
+              srcset="./images/img4.jpg 1x,./images/img4-1-2x.jpg 2x "
+              width="264" />
               <div class="filling">
                 <h3 class="team-item section-suptitle-employee">
                   Daniel Wilson
@@ -510,7 +520,7 @@
               />
               <button type="submit" class="footer-form-submit">
                 Subscribe
-                <svg class="footer-form-icon" width="24" height="24">
+                <svg class="footer-form-icon" width="24" height="20">
                   <use href="./images/icons.svg#icon-Frame-1"></use>
                 </svg>
               </button>
@@ -520,7 +530,7 @@
       </div>
       
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -601,7 +611,7 @@
           >
 
           <button type="submit" class="modal-form-submit">Send</button>
-        </form> -->
+        </form> 
       </div>
     </div>
     <script src="./js/modal.js"></script>
