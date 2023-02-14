@@ -1,6 +1,6 @@
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 428px;
+    width: 428px;
   }
   .header-container {
     max-width: 100%;
@@ -169,6 +169,7 @@
     display: flex;
   }
   .features-item {
+    width: 100%;
   }
 
   .visually-hidden {
@@ -304,7 +305,6 @@
   .customers-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
   }
 
   .customers-item {

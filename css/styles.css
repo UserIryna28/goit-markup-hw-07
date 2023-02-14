@@ -331,10 +331,14 @@ img {
 }
 /* ----features---- */
 .features {
-  padding-bottom: 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .features-list {
   display: flex;
+  flex-direction: column;
+  row-gap: 72px;
+  align-items: center;
 }
 .features-item {
   width: 100%;

@@ -15,7 +15,23 @@
       ),
       url(../images/desctop-bg-1x.jpg);
   }
+  .features-list {
+    display: flex;
+    gap: 24px;
+  }
+  .title-list {
+    display: flex;
+    gap: 24px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .customers-list {
+    display: flex;
+    gap: 24px;
+  }
 }
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -26,11 +42,4 @@
       ),
       url("../images/desctop-bg-2x.jpg");
   }
-}
-.customers-item {
-  width: calc((100% - 120px) / 6);
-}
-.customers-list {
-  display: flex;
-  gap: 24px;
 }
