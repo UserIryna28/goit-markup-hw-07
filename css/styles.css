@@ -54,23 +54,18 @@ img {
   padding-left: 16px;
   padding-right: 16px;
 }
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
   .container {
     width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
-}
-/* .customers-item {
-  width: calc((100% - 16px) / 2);
-  height: 88px;
-} */
-.header-container {
-  max-width: 100%;
-}
-.cover-container {
-  max-width: 100%;
-}
+  .header-container {
+    max-width: 100%;
+  }
+  .cover-container {
+    max-width: 100%;
+  } */
 .cover {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -80,25 +75,9 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .cover {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/mobile-bg-2х.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-}
-
 /* -----header---- */
 
 .container {
-  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -117,8 +96,12 @@ img {
 }
 .header-navigation {
   display: flex;
-  margin-right: auto;
+  margin-right: 76px;
 }
+.header-links {
+  display: none;
+}
+
 .header-links {
   display: flex;
 }
@@ -149,7 +132,6 @@ img {
   line-height: 1.3;
   text-transform: uppercase;
   color: var(--accent-color);
-  margin-right: 76px;
 }
 .second-part {
   color: var(--primary-title-color);
@@ -355,7 +337,7 @@ img {
   display: flex;
 }
 .features-item {
-  width: 264px;
+  width: 100%;
 }
 /* .features-item:not(:last-child) {
   margin-right: 24px;
@@ -480,7 +462,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
-.features-list {
+.title-list {
   list-style: none;
 }
 .box {
@@ -571,7 +553,6 @@ img {
   color: var(--hover-color);
   border-color: var(--hover-color);
 }
-*/
 
 /* .customers-link:hover,
 .customers-link:focus {
@@ -959,4 +940,19 @@ img {
   .modal-close:focus
   .modal-close-btn-icon {
   color: var(--cover-color);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .cover {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/mobile-bg-2х.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
 }

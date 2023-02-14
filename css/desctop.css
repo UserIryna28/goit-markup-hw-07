@@ -1,20 +1,20 @@
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1158px;
   }
-}
-.header-container {
-  max-width: 100%;
-}
-.cover-container {
-  max-width: 100%;
-}
-.cover {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/desctop-bg-1x.jpg);
+  .header-container {
+    max-width: 100%;
+  }
+  .cover-container {
+    max-width: 100%;
+  }
+  .cover {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desctop-bg-1x.jpg);
+  }
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -26,12 +26,11 @@
       ),
       url("../images/desctop-bg-2x.jpg");
   }
-} */
-/* .customers-item {
+}
+.customers-item {
   width: calc((100% - 120px) / 6);
-} 
+}
 .customers-list {
   display: flex;
   gap: 24px;
 }
-*/
