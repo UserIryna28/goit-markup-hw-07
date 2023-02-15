@@ -43,3 +43,10 @@
       url("../images/desctop-bg-2x.jpg");
   }
 }
+.social {
+  display: flex;
+  align-items: baseline;
+}
+.footer-first-part {
+  margin-right: 120px;
+}

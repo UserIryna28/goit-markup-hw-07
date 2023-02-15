@@ -20,9 +20,17 @@
     line-height: 1.3;
     letter-spacing: 0.04em;
   }
-  */
-/* cover */
- .cover {
+  .contact-link {
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-title-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* cover */
+  .cover {
     padding-top: 108px;
     padding-bottom: 108px;
     background-image: linear-gradient(

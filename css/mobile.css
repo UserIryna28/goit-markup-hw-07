@@ -226,6 +226,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    row-gap: 72px;
     align-items: center;
   }
   .team-soc-list {
@@ -264,7 +265,7 @@
     width: 260px;
     border-radius: 0px 0px 4px 4px;
     border: 1px solid var(--botder-color);
-    margin-bottom: 72px;
+
     background-color: var(--main-background-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);

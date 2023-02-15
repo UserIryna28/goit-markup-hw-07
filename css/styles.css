@@ -65,7 +65,12 @@ img {
   }
   .cover-container {
     max-width: 100%;
-  } */
+  }  */
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .cover {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -101,14 +106,18 @@ img {
 .header-links {
   display: none;
 }
-
-.header-links {
-  display: flex;
+.contact-link {
+  display: none;
 }
-
-.contact-links {
-  display: flex;
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
 }
+/* .contact-links {
+  display: flex;
+} */
 
 .nav-link {
   font-weight: 500;
@@ -382,17 +391,18 @@ img {
   color: var(--primary-title-color);
 }
 
-.section-suptitle {
+.section-suptitle-employee {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
   color: var(--primary-title-color);
+  margin-bottom: 8px;
 }
-.section-text {
+.section-text-position {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 8px;
   margin-bottom: 8px;
   color: var(--secondary-title-color);
 }
@@ -491,15 +501,20 @@ img {
 .box-first:not(:last-child) {
   margin-right: 24px;
 }
-
 .team {
+  padding-top: 96px;
+  padding-bottom: 128px;
   background-color: var(--content-color);
 }
 
 .title-list {
   list-style: none;
   display: flex;
+  flex-direction: column;
+  row-gap: 72px;
+  align-items: center;
 }
+
 .team-soc-list {
   display: flex;
   justify-content: center;
@@ -529,14 +544,17 @@ img {
   background-color: var(--hover-color);
 }
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customers-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
 }
 .customers-link {
-  width: 100%;
+  width: 190px;
   height: 88px;
   border: 1px solid var(--secondary-border-color);
   border-radius: 4px;
@@ -630,14 +648,14 @@ img {
 /* ---------FOOTER--------------- */
 .footer {
   background-color: var(--primary-title-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .footer .nav-logo {
   margin-right: 0;
 }
 .footer-first-part {
-  margin-right: 120px;
+  width: 200px;
 }
 .other-part {
   color: var(--content-color);
@@ -744,7 +762,10 @@ img {
 }
 .social {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .backdrop {
   width: 100%;
