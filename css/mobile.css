@@ -80,6 +80,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .mob-menu-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
   .icon-Vector-5.mob-menu-close-btn-icon {
     fill: #000000;
     background-color: var(--main-border-color);
@@ -99,12 +104,9 @@
 
   .mob-soc-list {
   }
-  .mob-menu-contacts-link {
-    margin-bottom: 40px;
-  }
-  */
-/* cover-mobile */
-.container {
+
+  /* cover-mobile */
+  .container {
     width: 428px;
   }
   .cover {
@@ -489,6 +491,10 @@
     line-height: 1, 5;
     letter-spacing: 0.02em;
     text-align: center;
+  }
+  .modal {
+    width: 392px;
+    height: 596px;
   }
 }
 @media (min-device-pixel-ratio: 2),
