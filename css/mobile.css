@@ -121,6 +121,7 @@
     align-items: center;
   }
   .cover-title {
+    width: 320px;
     font-weight: 700;
     width: 318px;
     font-size: 36px;
