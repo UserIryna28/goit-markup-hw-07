@@ -159,16 +159,13 @@
     background-color: var(--primary-title-color);
     padding-top: 96px;
     padding-bottom: 96px;
-    position: relative;
   }
   .social {
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
   }
   .footer-first-part {
-    position: relative;
     width: 264px;
     margin-right: 24px;
   }
@@ -179,9 +176,9 @@
     text-align: left;
   }
   .footer-form-subscribe {
-    flex-direction: row;
+    /* flex-direction: row;
     top: 20px;
-    justify-content: left;
+    justify-content: left; */
     /* width: 405px; */
   }
   .footer-form-title {

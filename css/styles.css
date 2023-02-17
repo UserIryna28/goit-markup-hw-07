@@ -149,7 +149,21 @@ img {
 .header-links {
   display: none;
 }
-
+.backdrop-mob {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  transition-property: opasity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 .mobile-menu-open {
   background-color: transparent;
   border: none;
@@ -372,7 +386,7 @@ img {
   }
 }
 .cover-title {
-  width: 500px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   font-size: 56px;
@@ -815,7 +829,7 @@ img {
   pointer-events: none;
 }
 .modal {
-  width: 300px;
+  width: 100%;
   min-height: 500px;
   background-color: #fcfcfc;
   border-radius: 4px;
