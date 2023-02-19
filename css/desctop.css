@@ -1,9 +1,36 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
   }
   .header-container {
     max-width: 100%;
+  }
+  .features-container {
+    max-width: 100%;
+  }
+
+  .services-container {
+    min-width: 100%;
+  }
+  .team-container {
+    min-width: 100%;
+  }
+  .customers-container {
+    min-width: 100%;
+  }
+  .active {
+    color: var(--hover-color);
+    position: relative;
+  }
+  .active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--hover-color);
   }
   .nav-logo {
     margin-right: 76px;
@@ -11,8 +38,8 @@
   .contact-links {
     flex-direction: row;
     row-gap: 4px;
-    font-size: 12px;
-    line-height: 1.3;
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
   }
   .contact-link {
@@ -31,7 +58,13 @@
     width: 496px;
     margin-bottom: 48px;
   }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .cover {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -43,7 +76,7 @@
     flex-wrap: nowrap;
   }
   .features-item {
-    width: calc((100%--72px) / 4);
+    width: calc((100% - 72px) / 4);
   }
   .features-social-icon {
     fill: currentColor;
@@ -83,12 +116,10 @@
     color: var(--secondary-title-color);
   }
   .services {
-    display: flex;
+    display: block;
+    padding-top: 0;
   }
-  .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+
   .services-interactiv {
     width: 100%;
     display: block;
@@ -157,6 +188,9 @@
     width: calc((100% - 120px) / 6);
     height: 88px;
   }
+  .customers-link {
+    height: 100%;
+  }
   .social {
     flex-wrap: nowrap;
     display: flex;
@@ -166,11 +200,17 @@
     /* flex-direction: row; */
     align-items: baseline;
   }
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .footer-first-part {
     margin-right: 120px;
+    margin-bottom: 0;
   }
   .footer-second-part {
     margin-right: 80px;
+    margin-bottom: 0;
   }
   .footer-form-input-submit {
     /* display: flex;
