@@ -1,8 +1,8 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -15,12 +15,13 @@
   .features-container {
     max-width: 100%;
   }
-  .team-container {
-    min-width: 100%;
+  .backdrop-mob {
+    display: none;
   }
-  .customers-container {
-    min-width: 100%;
+  .mob-menu {
+    display: none;
   }
+
   .nav-logo {
     margin-right: 123px;
   }
@@ -63,6 +64,17 @@
       ),
       url(../images/tablet-bg-1x.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .cover {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/tablet-bg-2x.jpg");
+    }
+  }
   .header-container {
     display: flex;
     align-items: center;
@@ -83,7 +95,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -28px;
+    bottom: -32px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -191,7 +203,6 @@
     padding-bottom: 96px;
   }
   .social {
-    min-width: 100%;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -237,14 +248,3 @@
     ),
     url(../images/tablet-bg-1x.jpg);
 } */
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .cover {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/tablet-bg-2x.jpg");
-  }
-}

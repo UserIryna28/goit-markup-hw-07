@@ -1,6 +1,6 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
   .container {
-    width: 428px;
+    max-width: 428px;
   }
   .header-container {
     max-width: 100%;
@@ -77,6 +77,7 @@
     margin-bottom: 100px;
   }
   .mob-menu-close {
+    margin-left: auto;
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -117,6 +118,7 @@
   }
 
   .mob-soc-list {
+    justify-content: start;
     gap: 56px;
   }
 
@@ -286,7 +288,7 @@
     list-style: none;
   }
   .box-second {
-    width: 260px;
+    width: 264px;
     border-radius: 0px 0px 4px 4px;
     border: 1px solid var(--botder-color);
 
